@@ -1,0 +1,16 @@
+.my-modal {
+}
+
+.modal-content {
+    background: rgb(85, 83, 76);
+    color: rgb(212, 198, 182);
+    width: 450px;
+    margin-left: 180px;
+}
+.modal-footer {
+    margin-left: 0px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}

@@ -1,0 +1,198 @@
+@startuml El Grande Proyect
+skinparam classFontColor automatic
+skinparam classBackgroundColor #7bb
+skinparam enumBackgroundColor #9d9
+skinparam noteBackgroundColor #9d9
+skinparam classHeaderBackgroundColor #144
+skinparam abstractclassHeaderBackgroundColor #FB4499
+
+class Company{
++ Id : int
++ Name : string
++ CUI : string
++ Email : string
++ Logo : byte[]
++ Empmloyees : List<Client>
++ UserEmployees : List<User>
++ Teams : List<Team>
+}
+
+class Team {
++ Id : int
++ Name : string
++ ManagerId : int?
++ Manager : User
++ Icon : byte[]
++ Sellers : List<User>
++ CompanyId : int
++ Company : Company
+}
+
+class User {
++ Id : int
++ FirstName : string
++ LastName : string
++ Email : string
++ Password : string
++ ConfirmPassword : string
++ Position : UserPosition
++ PhoneNumber : string
++ Image : byte[]
++ Deals : List<Deal>
++ CompanyId : int
++ Company : Company
++ TeamId : int?
++ Team : Team
+
+}
+
+enum UserPosition{
+Manager,
+Salesman,
+Admin
+}
+
+
+class Address{
++ Id : int
++ Country : string
++ City : string
++ Street : string
++ Note : string
++ Geolocation : string
++ ClientId : int
++ Client : Client
+}
+
+class Client{
++ Id : int
++ FirstName : string
++ LastName : string
++ Email : string
++ PhoneNumber : string
++ DateOfBirth : DateTime
++ Gender : GenderTypes
++ Client : Client
++ Address : Address
++ ProfessionalApproach : ProfessionalApproach
++ PersonalApproach : PersonalApproach
++ Deals : List<Client_Deal>
++ SocialMedias : List<SocialMedia>
+}
+
+class Deal{
++ Id : int
++ ClientId : int
++ UserId : int
++ Priority : PriorityTypes
++ Status : StatusTypes
++ Clients : List<Client>
++ Interceptions: List<Interception>
++ Products : List<Product>
+}
+
+class Interception{
++ Id : int
++ Date : DateTime
++ Location : LocationTypes
++ Address : Address
++ OnlineMeet : string
++ DealId : int
++ Deal : Deal
+}
+
+enum StatusTypes{
+ToContact,
+ContactMade,
+MeetingArranged,
+NeedsDefined,
+ProposalMade,
+NegotiationsStarted,
+Sealed,
+Failed
+}
+
+enum PriorityTypes{
+High,
+Medium,
+Low
+}
+
+class PersonalApproach{
++ Id : int
++ Details : string
++ ClientId : int
++ Client : Client
+}
+
+class Product{
++ Id : int
++ Name : string
++ Description : string
++ ActualPrice : decimal
++ MinimPrice : decimal
++ SoldPrice : decimal 
++ Guarantees : string
++ Benefits : string
++ UpSell : string
++ CrossSell : string
++ BundlingSell : string
++ DealId : int
++ Deal : Deal
+}
+
+class ProfessionalApproach{
++ Id : int
++ Details : string
++ ClientId : int
++ Client : Client
+}
+
+class SocialMedia{
++ Id : int
++ Channell : SocialMediaChannell
++ Address : string
++ ClientId : int
++ Client : Client
+}
+
+enum SocialMediaChannell{
+LinkeIn,
+Instagram,
+Twitter,
+Facebook,
+Slack,
+Dribbble,
+Reddit,
+}
+
+enum GenderTypes{
+Female,
+Male,
+Unknown
+}
+circle ApiCompanyCRUD
+circle ApiUserCRUD
+circle ApiClientCRUD
+
+ApiClientCRUD -- User
+ApiUserCRUD -- User
+Deal o-- Interception
+ApiCompanyCRUD -- Company
+User --> UserPosition
+SocialMedia --> SocialMediaChannell 
+Client --> GenderTypes
+Deal --> PriorityTypes 
+Deal --> StatusTypes
+User *-- Deal
+Deal o-- Client
+Deal o-- Product
+Client *-- SocialMedia
+Client o-- Address
+Interception o-- Address
+Company o-- Client
+User "*" --o "1" Team
+Client <-- PersonalApproach
+Client <-- ProfessionalApproach
+
+@enduml

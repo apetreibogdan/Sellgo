@@ -1,0 +1,21 @@
+.layout {
+    color: var(--txt-color);
+}
+
+.layout__content {
+    padding-left: var(--sidebar-width);
+    background-color: var(--second-bg);
+    min-height: 100vh;
+}
+
+.layout__content-main {
+    padding: 30px;
+}
+.modaltest-content {
+    width: auto;
+    background-color: rgb(85, 83, 76);
+    color: rgb(212, 198, 182);
+    transition: all 0.3s ease-in-out;
+    transform: translateY(-200px);
+    border-radius: 5%;
+}

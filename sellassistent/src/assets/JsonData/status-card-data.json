@@ -1,0 +1,22 @@
+[
+    {
+        "icon": "bx bxs-face",
+        "count": "1,995",
+        "title": "Deals in Proress"
+    },
+    {
+        "icon": "bx bx-cart",
+        "count": "2,001",
+        "title": "No. of Deals in Progress"
+    },
+    {
+        "icon": "bx bx-dollar-circle",
+        "count": "$2,632",
+        "title": "Sealed Deals"
+    },
+    {
+        "icon": "bx bx-receipt",
+        "count": "1,711",
+        "title": "No. of Sealed Deals"
+    }
+]

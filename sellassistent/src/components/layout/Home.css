@@ -1,0 +1,132 @@
+/*
+ * Globals
+ */
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+    color: #333;
+    text-shadow: none; /* Prevent inheritance from `body` */
+}
+
+/*
+ * Base structure
+ */
+
+body {
+    text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+}
+
+.cover-container {
+    max-width: 100%;
+    height: 100%;
+}
+
+/*
+   * Header
+   */
+
+.nav-masthead .nav-link {
+    padding: 0.25rem 0;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.5);
+    background-color: transparent;
+    border-bottom: 0.25rem solid transparent;
+}
+
+.nav-masthead:hover .nav-link:hover {
+    border-bottom-color: rgb(208, 255, 0);
+    color: rgb(208, 255, 0);
+}
+.signInBtn {
+    background-color: rgb(255, 255, 255);
+    color: #333;
+}
+.signInBtn:hover {
+    background-color: rgb(208, 255, 0);
+    color: #333;
+}
+.nav-masthead .nav-link:focus {
+    border-bottom-color: rgb(255, 255, 255);
+}
+
+.nav-masthead .nav-link + .nav-link {
+    margin-left: 1rem;
+}
+
+.nav-masthead .active {
+    color: rgb(255, 255, 255);
+    border-bottom-color: rgba(255, 255, 255, 0.25);
+}
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
+#logo {
+    animation: fill 0.5s ease forwards 3.5s;
+}
+
+#logo path:nth-child(2) {
+    stroke-dasharray: 275px;
+    stroke-dashoffset: 275px;
+    animation: line-anim 2s ease forwards;
+}
+#logo path:nth-child(3) {
+    stroke-dasharray: 244px;
+    stroke-dashoffset: 244px;
+    animation: line-anim 2s ease forwards 0.3s;
+}
+#logo path:nth-child(4) {
+    stroke-dasharray: 131px;
+    stroke-dashoffset: 131px;
+    animation: line-anim 2s ease forwards 0.6s;
+}
+#logo path:nth-child(5) {
+    stroke-dasharray: 146px;
+    stroke-dashoffset: 146px;
+    animation: line-anim 2s ease forwards 0.9;
+}
+#logo path:nth-child(6) {
+    stroke-dasharray: 155px;
+    stroke-dashoffset: 155px;
+    animation: line-anim 2s ease forwards 1.2s;
+}
+#logo path:nth-child(7) {
+    stroke-dasharray: 127px;
+    stroke-dashoffset: 127px;
+    animation: line-anim 2s ease forwards 1.5s;
+}
+#logo path:nth-child(8) {
+    stroke-dasharray: 25px;
+    stroke-dashoffset: 25px;
+    animation: line-anim 2s ease forwards 1.7s;
+}
+
+@keyframes line-anim {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes fill {
+    from {
+        fill: transparent;
+    }
+    to {
+        fill: white;
+    }
+}

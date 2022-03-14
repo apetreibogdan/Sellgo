@@ -1,0 +1,311 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+    --main-bg: #ffffff;
+    --second-bg: #fafafb;
+    --txt-color: #455560;
+    --txt-white: #fff;
+    --main-color: #349eff;
+    --second-color: #62b4ff;
+    --box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+    --main-bg-light: #ffffff;
+    --second-bg-light: #fafafb;
+    --txt-color-light: #455560;
+    --box-shadow-light: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+    --main-bg-dark: #2d2d2d;
+    --second-bg-dark: #202020;
+    --txt-color-dark: #bbbbbb;
+    --box-shadow-dark: rgba(0, 0, 0, 0.2) 0px 5px 10px;
+
+    --main-color-blue: #349eff;
+    --second-color-blue: #62b4ff;
+
+    --main-color-red: #fb0b12;
+    --second-color-red: #ff4a6b;
+
+    --main-color-cyan: #10d4d2;
+    --second-color-cyan: #2ae9e6;
+
+    --main-color-green: #019707;
+    --second-color-green: #4caf50;
+
+    --main-color-orange: #d68102;
+    --second-color-orange: #fca11a;
+
+    --sidebar-width: 220px;
+    --border-radius: 15px;
+    --topnav-height: 110px;
+    --transition-cubic: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+#root {
+    height: 100%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    letter-spacing: 0.7px;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+a:hover {
+    color: var(--main-color);
+}
+
+button {
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    color: var(--txt-color);
+}
+
+ul {
+    list-style-type: none;
+}
+
+input {
+    border: 2px solid transparent;
+    outline: 0;
+}
+
+input:focus {
+    border: 2px solid var(--main-color);
+}
+
+.page-header {
+    margin-bottom: 40px;
+    text-transform: capitalize;
+}
+
+.card {
+    padding: 30px;
+    margin-bottom: 30px;
+    background-color: var(--main-bg);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+}
+.priority0 {
+    border-left: 10px solid #ff0000;
+    border-right: 10px solid #ff0000;
+}
+.priority1 {
+    border-left: 10px solid #00c8e2;
+    border-right: 10px solid #00c8e2;
+}
+.priority2 {
+    border-left: 10px solid #d2f702;
+    border-right: 10px solid #d2f702;
+}
+
+.colorpriority0 {
+    color: #ff1414;
+}
+.colorpriority1 {
+    color: #00c8e2;
+}
+.colorpriority2 {
+    color: #d2f702;
+}
+
+.status0 {
+    border-left: 10px solid #231e24;
+}
+.status1 {
+    border-left: 10px solid #d108e4;
+}
+.status2 {
+    border-left: 10px solid #c74d07;
+}
+.status3 {
+    border-left: 10px solid #8f5600;
+}
+.status4 {
+    border-left: 10px solid #0063e6;
+}
+.status5 {
+    border-left: 10px solid #100197;
+}
+.status6 {
+    border-left: 10px solid var(--main-color-green);
+}
+.status7 {
+    border-left: 10px solid var(--main-color-red);
+}
+
+.full-height {
+    height: 100%;
+}
+
+.card.full-height {
+    height: calc(100% - 30px);
+}
+
+.card__header {
+    text-transform: capitalize;
+}
+
+.card > div ~ div {
+    margin-top: 30px;
+}
+
+.card__footer {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.light-background {
+    background-color: var(--main-bg-light);
+    color: #000;
+}
+
+.dark-background {
+    background-color: var(--main-bg-dark);
+    color: #fff;
+}
+
+.blue-color {
+    background-color: var(--main-color-blue);
+    color: #fff;
+}
+
+.red-color {
+    background-color: var(--main-color-red);
+    color: #fff;
+}
+
+.cyan-color {
+    background-color: var(--main-color-cyan);
+    color: #fff;
+}
+
+.green-color {
+    background-color: var(--main-color-green);
+    color: #fff;
+}
+
+.orange-color {
+    background-color: var(--main-color-orange);
+    color: #fff;
+}
+
+.flexbox {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+    max-width: 768px;
+    height: 100vh;
+
+    overflow: hidden;
+
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.flexbox .board {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    max-width: 300px;
+
+    background-color: black;
+
+    padding: 15px;
+}
+
+.flexbox .board .card1 {
+    padding: 15px 25px;
+    background-color: blanchedalmond;
+
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+.scroll {
+    height: 76vh;
+    padding: 40px;
+    overflow-x: auto;
+}
+.scroll::-webkit-scrollbar {
+    width: 8px; /* width of the entire scrollbar */
+}
+
+.scroll::-webkit-scrollbar-track {
+    background: rgba(146, 141, 133, 0.137); /* color of the tracking area */
+}
+
+.scroll::-webkit-scrollbar-thumb {
+    background-color: rgba(97, 97, 100, 0.048); /* color of the scroll thumb */
+    border-radius: 20px; /* roundness of the scroll thumb */
+    border: 2px solid var(--main-color); /* creates padding around scroll thumb */
+}
+
+.delete-icon {
+    margin-left: 25px;
+    color: rgb(121, 118, 118);
+    cursor: pointer;
+}
+.delete-icon:hover {
+    color: rgb(240, 4, 4);
+    transition: all 0.3s ease-in-out;
+}
+
+.nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.textareaApproach {
+    /* border: gray; */
+    border-radius: 5px;
+    color: var(--txt-color);
+    background-color: transparent;
+}
+
+.btn {
+    background-color: var(--main-color);
+    border: var(--main-color);
+    color: white;
+}
+.btn:hover {
+    background-color: var(--second-color);
+    border: var(--second-color);
+    color: white;
+}
+.cardTitle {
+    color: var(--main-color);
+    margin-bottom: 25px;
+}
+.cardSpace {
+    align-items: center;
+    padding: 0, 2%;
+}
+.CardTile {
+    height: 2%;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    padding: 8%;
+}
+.tippy-tooltip.tomato-theme {
+    background-color: rgba(37, 36, 36, 0.562);
+}
+.user__image {
+    height: 100px;
+    width: 100px;
+    border-radius: 25%;
+}

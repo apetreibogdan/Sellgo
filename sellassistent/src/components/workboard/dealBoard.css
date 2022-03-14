@@ -1,0 +1,270 @@
+.pill {
+    height: 120px;
+    font-weight: 600;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: color 0.2s ease 0s;
+    background-color: var(--second-bg);
+
+    cursor: pointer;
+}
+.headpill {
+    text-align: center;
+}
+.pillText {
+    margin-top: 50px;
+    color: var(--text-color);
+    z-index: 1000;
+}
+
+.pillClient {
+    /* border-right: 2px solid var(--main-color); */
+
+    z-index: 1;
+}
+.pillCompany {
+    /* border-right: 2px solid var(--main-color); */
+
+    z-index: 1;
+}
+.pillDealStatus {
+    /* border-right: 2px solid var(--main-color); */
+
+    z-index: 1;
+}
+.pillInterception {
+    /* border-right: 2px solid var(--main-color); */
+
+    z-index: 1;
+}
+.pillPriority {
+    /* border-right: 2px solid var(--main-color); */
+
+    z-index: 1;
+}
+.PillDealSize {
+    /* border-right: 2px solid var(--main-color); */
+
+    z-index: 1;
+}
+.pillProduct {
+    background-color: var(--second-bg);
+
+    z-index: 1;
+}
+.pillcard:hover {
+    /* transform: scale(1.03); */
+    /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06); */
+}
+.paddingHeader {
+    padding-left: 60px;
+    padding-right: 90px;
+}
+/* --------------------------------------------------------- */
+.pillClient::before {
+    z-index: -1;
+    content: "";
+    width: 100%;
+    padding-top: 100%;
+    border-radius: 50%;
+    background-image: linear-gradient(
+        to top right,
+        var(--main-color),
+        var(--second-color)
+    );
+    position: absolute;
+    left: 0.5%;
+    top: 50%;
+    transform: scale(0);
+    transition: transform 0.8s ease 0s;
+}
+
+.pillClient:hover::before {
+    transform: scale(3);
+}
+
+.pillClient:hover {
+    color: var(--txt-white);
+}
+/* --------------------------------------------------------- */
+.pillCompany::before {
+    z-index: -1;
+    content: "";
+    width: 100%;
+    padding-top: 100%;
+    border-radius: 50%;
+    background-image: linear-gradient(
+        to top right,
+        violet,
+        var(--second-color)
+    );
+    position: absolute;
+    left: 0.5%;
+    top: 50%;
+    transform: scale(0);
+    transition: transform 0.8s ease 0s;
+}
+
+.pillCompany:hover::before {
+    transform: scale(3);
+}
+
+.pillCompany:hover {
+    color: var(--txt-white);
+}
+/* --------------------------------------------------------- */
+.pillDealStatus::before {
+    z-index: -1;
+    content: "";
+    width: 100%;
+    padding-top: 100%;
+    border-radius: 50%;
+    background-image: linear-gradient(
+        to top right,
+        orange,
+        var(--second-color)
+    );
+    position: absolute;
+    left: 0.5%;
+    top: 50%;
+    transform: scale(0);
+    transition: transform 0.8s ease 0s;
+}
+
+.pillDealStatus:hover::before {
+    transform: scale(3);
+}
+
+.pillDealStatus:hover {
+    color: var(--txt-white);
+}
+/* --------------------------------------------------------- */
+.pillInterception::before {
+    z-index: -1;
+    content: "";
+    width: 100%;
+    padding-top: 100%;
+    border-radius: 50%;
+    background-image: linear-gradient(
+        to top right,
+        rgb(180, 47, 47),
+        var(--second-color)
+    );
+    position: absolute;
+    left: 0.5%;
+    top: 50%;
+    transform: scale(0);
+    transition: transform 0.8s ease 0s;
+}
+
+.pillInterception:hover::before {
+    transform: scale(3);
+}
+
+.pillInterception:hover {
+    color: var(--txt-white);
+}
+/* --------------------------------------------------------- */
+.pillPriority::before {
+    z-index: -1;
+    content: "";
+    width: 100%;
+    padding-top: 100%;
+    border-radius: 50%;
+    background-image: linear-gradient(
+        to top right,
+        rgb(0, 255, 34),
+        var(--second-color)
+    );
+    position: absolute;
+    left: 0.5%;
+    top: 50%;
+    transform: scale(0);
+    transition: transform 0.8s ease 0s;
+}
+
+.pillPriority:hover::before {
+    transform: scale(3);
+}
+
+.pillPriority:hover {
+    color: var(--txt-white);
+}
+/* --------------------------------------------------------- */
+.pillDealSize::before {
+    z-index: -1;
+    content: "";
+    width: 100%;
+    padding-top: 100%;
+    border-radius: 50%;
+    background-image: linear-gradient(
+        to top right,
+        rgb(224, 224, 103),
+        var(--second-color)
+    );
+    position: absolute;
+    left: 0.5%;
+    top: 50%;
+    transform: scale(0);
+    transition: transform 0.8s ease 0s;
+}
+
+.pillDealSize:hover::before {
+    transform: scale(3);
+}
+
+.pillDealSize:hover {
+    color: var(--txt-white);
+}
+/* --------------------------------------------------------- */
+.pillProduct::before {
+    z-index: -1;
+    content: "";
+    width: 100%;
+    padding-top: 100%;
+    border-radius: 50%;
+    background-image: linear-gradient(
+        to top right,
+        rgb(141, 194, 116),
+        var(--second-color)
+    );
+    position: absolute;
+    left: 0.5%;
+    top: 50%;
+    transform: scale(0);
+    transition: transform 0.8s ease 0s;
+}
+
+.pillProduct:hover::before {
+    transform: scale(3);
+}
+
+.pillProduct:hover {
+    color: var(--txt-white);
+}
+
+/* --------------------------------------------------------- */
+.PillDealSize::before {
+    z-index: -1;
+    content: "";
+    width: 100%;
+    padding-top: 100%;
+    border-radius: 50%;
+    background-image: linear-gradient(to top right, pink, var(--second-color));
+    position: absolute;
+    left: 0.5%;
+    top: 50%;
+    transform: scale(0);
+    transition: transform 0.8s ease 0s;
+}
+
+.PillDealSize:hover::before {
+    transform: scale(3);
+}
+
+.pillText:hover {
+    color: var(--txt-white);
+    transform: scale(1.1);
+}

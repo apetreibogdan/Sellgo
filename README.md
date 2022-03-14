@@ -8,17 +8,18 @@ You have the freedom of choosing your teammates (assemble a team of 3-4 students
 
 This project is meant for 4 sprints at least, but it may keep you company until the end of the course, or even much longer. Who knows? Although we will not give you any direct tasks to fulfill, there will be some technical requirements for each sprint. You are expected to make incremental changes in a Scrum way, developing the project further and further, adding new features, technologies, etc.
 
-***¡Comience El Proyecte Grande!***
+**_¡Comience El Proyecte Grande!_**
 
 ## What are you going to learn?
 
-- Work in a Scrum team on a real project.
-- Grow your project iteratively.
-- Deliver increments each sprint.
+-   Work in a Scrum team on a real project.
+-   Grow your project iteratively.
+-   Deliver increments each sprint.
 
 ## Tasks
 
 1. Create a Product backlog (on Github) with user stories that cover at least the feature set you aim to complete next. Break down the user stories into smaller tasks, prioritize them, estimate them, and taking your capacities into account, determine how far you'll be able to get during this sprint.
+
     - There is a Product backlog for the project.
     - The backlog items are broken down into smaller tasks or subtasks.
     - The backlog items are in prioritiy order in the backlog.
@@ -28,15 +29,18 @@ This project is meant for 4 sprints at least, but it may keep you company until 
     - By the end of the sprint, there is less than 30% deviation from the plan (70% - 130% is completed according to the original plan)
 
 2. You need to use technologies which help achieving agile workflow, defined below.
+
     - Every item in the backlog should appear as an `Issue` on GitHub.
     - The repository has a `Project` defined on GitHub for every sprint. The `project board` shall contain every issue related to the sprint.
     - With every feature branch, a `Pull request` shall be opened and maintained. The `Pull request` shall contain the `Issue` linked with it. The `Pull request` shall contain the assignee, who is responsible for the given `Issue`. The `Pull request` shall contain at least one `Reviewer`, who is responsible for checking on their peers' work.
 
 3. You need to fulfill a couple of technical requirements defined below.
+
     - The project has a backend part with at least 5 API endpoint patterns providing data in JSON format.
     - The project has a frontend part written in React which consumes at least 5 different API endpoint patterns from the backend.
 
 4. Implement the features and tasks from the sprint backlog.
+
     - By the end of the sprint, at least 50% of the sprint plan is completed (measured in estimation points)
     - By the end of the sprint, at least 60% of the sprint plan is completed (measured in estimation points)
     - By the end of the sprint, at least 70% of the sprint plan is completed (measured in estimation points)
@@ -57,11 +61,9 @@ None
 
 ## Hints
 
-
-
 ## Background materials
 
-- <i class="far fa-exclamation"></i> [Definition of Done](project/curriculum/materials/pages/methodology/definition-of-done.md)
-- <i class="far fa-exclamation"></i> [Agile Project Management](project/curriculum/materials/pages/methodology/agile-project-management.md)
-- [Quickstart on GitHub Issues](https://docs.github.com/en/issues/tracking-your-work-with-issues/quickstart)
-- [Creating a pull request](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)
+-   <i class="far fa-exclamation"></i> [Definition of Done](project/curriculum/materials/pages/methodology/definition-of-done.md)
+-   <i class="far fa-exclamation"></i> [Agile Project Management](project/curriculum/materials/pages/methodology/agile-project-management.md)
+-   [Quickstart on GitHub Issues](https://docs.github.com/en/issues/tracking-your-work-with-issues/quickstart)
+-   [Creating a pull request](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)
