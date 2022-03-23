@@ -1,29 +1,35 @@
 # Sellgo
-app that helps sellers manage their sales - build with .Net C# and ReactJS
+>**_About:_** An app that helps sellers manage their sales - build with .Net C# and ReactJS
 
-#Install the project:
-- clone the repository in the folder you want to have it
-- get in the project folder:
+-------------------------
+
+### Install the project: ###
+1. CLONE THE REPOSITORY IN THE FOLDER YOU WANT TO HAVE IT:
+```diff 
++ cd ~yourFolder~/
++ git clone https://github.com/keitkalon/Sellgo.git
+```
+3. OPEN THE PROJECT FOLDER:
 ```diff 
 + cd ~yourFolder~/el-proyecte-grande-sprint-2-csharp-vladghinea\El Proyecte Grande
 ```
-- RUN:  
+3. RUN:  
 ```diff 
 + dotnet run --urls=http://localhost:44349/swagger/index.html/
 ```
-- navigate to react app folder:  
+4. NAVIGATE TO REACT APP FOLDER:  
 ```diff 
 + cd ~yourFolder~/el-proyecte-grande-sprint-2-csharp-vladghinea\sellassistent
 ```
-- RUN:
+5. RUN:
 ```diff 
 +  npm init
 ```
-- RUN:
+6. RUN:
  ```diff 
 + npm start
 ```
-- Open in browser:
+7. Open in browser:
 ```diff 
 + http://localhost:3000
 ```
