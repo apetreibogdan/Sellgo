@@ -7,6 +7,7 @@
 > - .Net C# 
 > - Entity Framework
 > - Identity Framework
+> - XUnit Test
 > - JW Token
 > - ReactJS
 > - Redux
