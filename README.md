@@ -64,7 +64,7 @@ npm -v
 ![Selgo2](https://user-images.githubusercontent.com/79155265/160077177-254c2bdf-cf44-42de-be00-615dd9aa38b2.png)
 
 <br><br>
-><p align="center">DEALS CENTRALISATION:</p> 
+><p align="center">DEALS CENTRALIZATION:</p> 
 ![Selgo5](https://user-images.githubusercontent.com/79155265/160077586-99d42390-af7f-4082-94d1-adcf76e5e65a.png)
 
 <br><br>
@@ -72,5 +72,5 @@ npm -v
 ![Selgo4](https://user-images.githubusercontent.com/79155265/160077294-fc40217b-b28f-423c-a1ca-02b5907050e0.png)
 
 <br><br>
-><p align="center">FORMULAR FOR DEEL FILE:</p> 
+><p align="center">FORMULAR FOR DEAL FILE:</p> 
 ![Selgo3](https://user-images.githubusercontent.com/79155265/160077262-3b6904db-7f88-42c5-9e0a-e312886ec042.png)
