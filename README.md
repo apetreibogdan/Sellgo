@@ -33,7 +33,7 @@ npm -v
 ```
 3. RUN:  
 ```diff 
-+ dotnet run --urls=http://localhost:44349/swagger/index.html/
++ dotnet run --urls=https://localhost:44349/swagger/index.html/
 ```
 4. NAVIGATE TO REACT APP FOLDER:  
 ```diff 
