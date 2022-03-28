@@ -40,7 +40,8 @@ npm -v
 + cd ~yourFolder~/el-proyecte-grande-sprint-2-csharp-vladghinea\sellassistent
 ```
 5. RUN:
-```diff 
+```diff
++  npm install
 +  npm init
 ```
 6. RUN:
