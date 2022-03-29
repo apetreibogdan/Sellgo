@@ -4,7 +4,7 @@
     <TargetFramework>net5.0</TargetFramework>
     <RootNamespace>El_Proyecte_Grande</RootNamespace>
   </PropertyGroup>
-
+	
   <ItemGroup>
     <PackageReference Include="FluentAssertions" Version="6.5.1" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.13" />
@@ -24,5 +24,9 @@
     </PackageReference>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
   </ItemGroup>
+	
+  <Target Name="RunNpmStart" AfterTargets="Build">
+     <Exec Command="npm start" WorkingDirectory="sellassistent" />
+  </Target>
 
 </Project>

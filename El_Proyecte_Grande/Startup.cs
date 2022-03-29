@@ -23,6 +23,7 @@ using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace El_Proyecte_Grande
 {
     public class Startup
@@ -37,6 +38,7 @@ namespace El_Proyecte_Grande
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+
             services.AddDbContext<AppDbContext>(options => options
                 //.UseLazyLoadingProxies()
                 .UseSqlServer(Configuration.GetConnectionString("CodecoolDbContext")));
@@ -94,6 +96,8 @@ namespace El_Proyecte_Grande
                     builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod();
                 });
             });
+            
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "El_Proyecte_Grande", Version = "v1" });
@@ -109,18 +113,22 @@ namespace El_Proyecte_Grande
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "El_Proyecte_Grande v1"));
             }
+           
 
             app.UseHttpsRedirection();
-
+         
             app.UseRouting();
             app.UseCors();
             app.UseAuthentication();
             app.UseAuthorization();
+           
 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
             });
+            
+
         }
     }
 }
