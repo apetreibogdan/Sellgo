@@ -26,6 +26,7 @@
   </ItemGroup>
 	
   <Target Name="RunNpmStart" AfterTargets="Build">
+	 <Exec Command="npm install" WorkingDirectory="sellassistent" />
      <Exec Command="npm start" WorkingDirectory="sellassistent" />
   </Target>
 
