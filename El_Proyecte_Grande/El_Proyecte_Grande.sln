@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31911.196
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "El Proyecte Grande", "El Proyecte Grande.csproj", "{B75E6F5D-9E36-4EA7-B201-2082788EF1FD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "El_Proyecte_Grande", "El_Proyecte_Grande.csproj", "{B75E6F5D-9E36-4EA7-B201-2082788EF1FD}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "El_Proyecte_Grande_XUnit_Test", "..\El_Proiecte_Grande_XUnit_Test\El_Proyecte_Grande_XUnit_Test.csproj", "{5436A37D-7C6B-4A75-B30D-9CB1D1F927EC}"
 	ProjectSection(ProjectDependencies) = postProject

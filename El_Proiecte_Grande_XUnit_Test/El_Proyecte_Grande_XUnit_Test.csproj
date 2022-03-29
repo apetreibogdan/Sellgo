@@ -21,7 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\El Proyecte Grande\El Proyecte Grande.csproj" />
+    <ProjectReference Include="..\El Proyecte Grande\El_Proyecte_Grande.csproj" />
   </ItemGroup>
 
 </Project>
