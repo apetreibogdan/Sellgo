@@ -3,7 +3,7 @@
 
 # Sellgo #
 >**_About:_** This is an app that helps sellers manage their sales status -
-> build with:
+> built with:
 > - .Net C# API
 > - Entity Framework
 > - Identity Framework
